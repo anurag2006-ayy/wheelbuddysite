@@ -1,0 +1,72 @@
+# ==============================================================================
+# WHEELBUDDY - PROJECT REQUIREMENTS & DEPENDENCY SPECIFICATION
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. CORE SYSTEM & RUNTIME ENVIRONMENT
+# ------------------------------------------------------------------------------
+Node.js>=18.0.0
+npm>=9.0.0
+
+# ------------------------------------------------------------------------------
+# 2. FRONTEND FRAMEWORK & CORE LIBRARIES (Root package.json)
+# ------------------------------------------------------------------------------
+react==19.2.7
+react-dom==19.2.7
+react-router-dom==7.18.1
+vite==8.1.1
+@vitejs/plugin-react==6.0.3
+
+# ------------------------------------------------------------------------------
+# 3. FRONTEND UI COMPONENTS, MAPS & STYLING
+# ------------------------------------------------------------------------------
+lucide-react==1.33.0
+framer-motion==13.1.1
+leaflet==1.9.4
+react-leaflet==5.0.0
+@fontsource/geist-sans==5.3.0
+oxlint==1.71.0
+
+# ------------------------------------------------------------------------------
+# 4. BACKEND API & DATABASE (backend/package.json)
+# ------------------------------------------------------------------------------
+express==4.19.2
+mongoose==8.5.0
+socket.io==4.7.5
+jsonwebtoken==9.0.2
+bcryptjs==2.4.3
+cors==2.8.5
+dotenv==16.4.5
+helmet==7.1.0
+morgan==1.10.0
+express-validator==7.1.0
+nodemon==3.1.4
+
+# ------------------------------------------------------------------------------
+# 5. KEY PROJECT FILES & STRUCTURE DIRECTORY
+# ------------------------------------------------------------------------------
+# Frontend Entry & Config:
+# - index.html                        (HTML entry point)
+# - vite.config.js                    (Vite build configuration)
+# - package.json                      (Frontend dependencies & scripts)
+# - src/main.jsx                      (React entry module)
+# - src/App.jsx                       (Main application router & portals)
+#
+# Frontend Modules & Views:
+# - src/pages/LandingPage.jsx         (Public landing page)
+# - src/pages/Login.jsx               (User authentication view)
+# - src/pages/AdminDashboard.jsx      (Admin control portal)
+# - src/pages/ParentDashboard.jsx     (Parent tracking portal)
+# - src/pages/DriverDashboard.jsx     (Bus driver operational portal)
+# - src/pages/AdminSOS.jsx            (Emergency alert system)
+# - src/components/LiveRouteMap.jsx   (Real-time tracking map component)
+# - src/context/AuthContext.jsx       (Authentication state provider)
+# - src/context/ThemeContext.jsx      (Dark/Light theme state provider)
+#
+# Backend Server API:
+# - backend/server.js                 (Node Express server entry)
+# - backend/package.json              (Backend API dependencies)
+# - backend/config/db.js              (MongoDB database connection)
+# - backend/routes/                   (Express REST API routes)
+# - backend/models/                   (MongoDB Mongoose schemas)
+# - backend/controllers/              (Business logic handlers)
