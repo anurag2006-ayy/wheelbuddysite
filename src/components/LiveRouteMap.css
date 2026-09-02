@@ -1,0 +1,122 @@
+/* ============================================================
+   LIVE ROUTE MAP — Dark Theme SVG Map
+   ============================================================ */
+
+.live-map {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.live-map--card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+}
+
+.live-map--hero {
+  background: transparent;
+}
+
+.live-map__svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.live-map--card .live-map__svg { padding: 6px; }
+
+.live-map__route-ghost {
+  fill: none;
+  stroke: var(--border-strong);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 1 10;
+}
+
+.live-map--hero .live-map__route-ghost {
+  stroke: rgba(255, 255, 255, 0.15);
+}
+
+.live-map__route-done {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+}
+
+.live-map--hero .live-map__route-done {
+  stroke: rgba(59, 130, 246, 0.6);
+}
+
+.live-map__stop {
+  fill: var(--bg-surface);
+  stroke: var(--border-strong);
+  stroke-width: 2;
+}
+
+.live-map--hero .live-map__stop {
+  stroke: rgba(255, 255, 255, 0.3);
+  fill: rgba(255, 255, 255, 0.08);
+}
+
+.live-map__pulse {
+  fill: var(--accent-glow);
+  animation: mapPulse 1.8s ease-out infinite;
+  transform-origin: center;
+}
+
+.live-map--hero .live-map__pulse {
+  fill: rgba(59, 130, 246, 0.2);
+}
+
+@keyframes mapPulse {
+  0% { r: 8; opacity: 0.9; }
+  100% { r: 20; opacity: 0; }
+}
+
+.live-map__marker-bg {
+  fill: var(--accent);
+  stroke: var(--bg-primary);
+  stroke-width: 2.5;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
+}
+
+.live-map--hero .live-map__marker-bg {
+  fill: var(--text-primary);
+}
+
+.live-map__bus-icon {
+  fill: #fff;
+}
+
+.live-map--hero .live-map__bus-icon {
+  fill: var(--bg-primary);
+}
+
+.live-map__readout {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: var(--text-micro);
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.live-map__readout-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--success);
+  box-shadow: 0 0 0 3px var(--success-muted);
+}

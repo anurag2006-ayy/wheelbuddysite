@@ -1,0 +1,57 @@
+/* ============================================================
+   LANGUAGE SWITCHER — Dark Theme
+   ============================================================ */
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px 7px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.lang-switch:hover {
+  border-color: var(--border-strong);
+  background: var(--bg-surface-hover);
+}
+
+.lang-switch select {
+  border: none;
+  background: transparent;
+  font-size: var(--text-caption);
+  font-weight: 600;
+  color: var(--text-primary);
+  outline: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+
+.lang-switch select option {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+}
+
+/* Light variant for use on dark hero sections */
+.lang-switch--light {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.lang-switch--light:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.lang-switch--light select {
+  color: #fff;
+}
+
+.lang-switch--light select option {
+  background: #1a1a2e;
+  color: #f0f0f5;
+}

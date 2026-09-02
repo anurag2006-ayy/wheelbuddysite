@@ -1,0 +1,194 @@
+/* ============================================================
+   WHEELBUDDY — DESIGN TOKENS
+   Premium dark-mode-first design system
+   ============================================================ */
+
+:root {
+  /* ── Color: Backgrounds ── */
+  --bg-primary:       #0a0a0f;
+  --bg-secondary:     #101018;
+  --bg-surface:       #16161f;
+  --bg-surface-hover: #1e1e2a;
+  --bg-elevated:      #222230;
+  --bg-overlay:       rgba(0, 0, 0, 0.6);
+  --bg-glass:         rgba(16, 16, 24, 0.8);
+
+  /* ── Color: Text ── */
+  --text-primary:     #ededf0;
+  --text-secondary:   #8b8ba0;
+  --text-tertiary:    #55556a;
+  --text-inverse:     #0a0a0f;
+
+  /* ── Color: Accent ── */
+  --accent:           #3b82f6;
+  --accent-hover:     #60a5fa;
+  --accent-muted:     rgba(59, 130, 246, 0.15);
+  --accent-glow:      rgba(59, 130, 246, 0.25);
+
+  /* ── Color: Semantic ── */
+  --success:          #10b981;
+  --success-muted:    rgba(16, 185, 129, 0.12);
+  --warning:          #f59e0b;
+  --warning-muted:    rgba(245, 158, 11, 0.12);
+  --danger:           #ef4444;
+  --danger-muted:     rgba(239, 68, 68, 0.10);
+
+  /* ── Color: Borders ── */
+  --border:           rgba(255, 255, 255, 0.06);
+  --border-subtle:    rgba(255, 255, 255, 0.04);
+  --border-strong:    rgba(255, 255, 255, 0.10);
+  --border-accent:    rgba(59, 130, 246, 0.3);
+
+  /* ── Typography: Font Family ── */
+  --font-sans:        'Geist Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:        'Geist Mono', 'SF Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+
+  /* ── Typography: Scale ── */
+  --text-display-xl:  clamp(2.75rem, 5vw, 4.5rem);
+  --text-display-l:   clamp(2.25rem, 4vw, 3.5rem);
+  --text-heading-xl:  clamp(1.75rem, 3vw, 2.25rem);
+  --text-heading-l:   clamp(1.375rem, 2vw, 1.75rem);
+  --text-heading-m:   1.25rem;
+  --text-body-l:      1.0625rem;
+  --text-body-m:      0.9375rem;
+  --text-body-s:      0.8125rem;
+  --text-caption:     0.75rem;
+  --text-micro:       0.6875rem;
+
+  /* ── Typography: Line Heights ── */
+  --lh-display:       1.08;
+  --lh-heading:       1.25;
+  --lh-body:          1.6;
+  --lh-tight:         1.35;
+  --lh-caption:       1.4;
+
+  /* ── Typography: Weights ── */
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+
+  /* ── Typography: Letter Spacing ── */
+  --tracking-tight:   -0.025em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.04em;
+  --tracking-wider:   0.08em;
+
+  /* ── Spacing Scale ── */
+  --space-1:    4px;
+  --space-2:    8px;
+  --space-3:    12px;
+  --space-4:    16px;
+  --space-5:    20px;
+  --space-6:    24px;
+  --space-8:    32px;
+  --space-10:   40px;
+  --space-12:   48px;
+  --space-16:   64px;
+  --space-20:   80px;
+  --space-24:   96px;
+  --space-30:   120px;
+  --space-40:   160px;
+
+  /* ── Border Radius ── */
+  --radius-xs:    6px;
+  --radius-sm:    8px;
+  --radius-md:    12px;
+  --radius-lg:    16px;
+  --radius-xl:    20px;
+  --radius-2xl:   24px;
+  --radius-full:  999px;
+
+  /* ── Shadows ── */
+  --shadow-xs:    0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm:    0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md:    0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-lg:    0 8px 32px rgba(0, 0, 0, 0.35);
+  --shadow-xl:    0 16px 48px rgba(0, 0, 0, 0.4);
+  --shadow-glow:  0 0 24px var(--accent-glow);
+  --shadow-inner: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+
+  /* ── Motion ── */
+  --duration-instant:   100ms;
+  --duration-fast:      150ms;
+  --duration-normal:    250ms;
+  --duration-emphasis:  400ms;
+  --duration-story:     800ms;
+  --duration-cinematic: 1200ms;
+
+  --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:  cubic-bezier(0.45, 0, 0.55, 1);
+  --ease-spring:  cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth:  cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  /* ── Layout ── */
+  --sidebar-w:    260px;
+  --sidebar-w-collapsed: 72px;
+  --topnav-h:     64px;
+  --max-w:        1280px;
+  --max-w-wide:   1440px;
+
+  /* ── Z-Index Scale ── */
+  --z-base:       1;
+  --z-dropdown:   10;
+  --z-sticky:     20;
+  --z-overlay:    30;
+  --z-modal:      40;
+  --z-toast:      50;
+  --z-tooltip:    60;
+}
+
+/* ============================================================
+   LIGHT THEME OVERRIDE
+   ============================================================ */
+
+[data-theme="light"] {
+  --bg-primary:       #f8f9fb;
+  --bg-secondary:     #ffffff;
+  --bg-surface:       #ffffff;
+  --bg-surface-hover: #f3f4f6;
+  --bg-elevated:      #ffffff;
+  --bg-overlay:       rgba(0, 0, 0, 0.4);
+  --bg-glass:         rgba(255, 255, 255, 0.85);
+
+  --text-primary:     #0f172a;
+  --text-secondary:   #64748b;
+  --text-tertiary:    #94a3b8;
+  --text-inverse:     #ffffff;
+
+  --accent:           #2563eb;
+  --accent-hover:     #1d4ed8;
+  --accent-muted:     rgba(37, 99, 235, 0.08);
+  --accent-glow:      rgba(37, 99, 235, 0.12);
+
+  --success-muted:    rgba(16, 185, 129, 0.08);
+  --warning-muted:    rgba(245, 158, 11, 0.08);
+  --danger-muted:     rgba(239, 68, 68, 0.06);
+
+  --border:           rgba(0, 0, 0, 0.08);
+  --border-subtle:    rgba(0, 0, 0, 0.04);
+  --border-strong:    rgba(0, 0, 0, 0.12);
+  --border-accent:    rgba(37, 99, 235, 0.2);
+
+  --shadow-xs:    0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm:    0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md:    0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg:    0 8px 32px rgba(0, 0, 0, 0.10);
+  --shadow-xl:    0 16px 48px rgba(0, 0, 0, 0.12);
+  --shadow-inner: inset 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-instant:   0ms;
+    --duration-fast:      0ms;
+    --duration-normal:    0ms;
+    --duration-emphasis:  0ms;
+    --duration-story:     0ms;
+    --duration-cinematic: 0ms;
+  }
+}

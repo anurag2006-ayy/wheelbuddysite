@@ -1,0 +1,75 @@
+/* ============================================================
+   STAT CARD — Premium Dark KPI Card
+   ============================================================ */
+
+.stat-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-5);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.stat-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-1px);
+}
+
+.stat-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--accent-muted);
+  color: var(--accent);
+}
+
+.stat-card__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.stat-card__value {
+  font-size: var(--text-heading-l);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: var(--tracking-tight);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.stat-card__suffix {
+  font-size: var(--text-body-s);
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-left: 4px;
+}
+
+.stat-card__label {
+  font-size: var(--text-body-s);
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* ── Tone Variants ── */
+
+.stat-card--success .stat-card__icon {
+  background: var(--success-muted);
+  color: var(--success);
+}
+
+.stat-card--warning .stat-card__icon {
+  background: var(--warning-muted);
+  color: var(--warning);
+}
+
+.stat-card--danger .stat-card__icon {
+  background: var(--danger-muted);
+  color: var(--danger);
+}

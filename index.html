@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WheelBuddy — Smart School Bus Tracking & Safety</title>
+    <meta name="description" content="WheelBuddy is a smart school transportation platform providing real-time bus tracking, safety alerts, and seamless communication between schools, drivers, and parents." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="WheelBuddy — Smart School Bus Tracking & Safety" />
+    <meta property="og:description" content="Real-time school transportation built around safety, visibility, and trust." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wheelbuddy.app" />
+
+    <!-- Twitter/X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WheelBuddy — Smart School Bus Tracking & Safety" />
+    <meta name="twitter:description" content="Real-time school transportation built around safety, visibility, and trust." />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0a0f" />
+
+    <!-- Prevent FOUC -->
+    <script>
+      (function() {
+        const saved = localStorage.getItem('wb_theme') || 'dark';
+        let theme = saved;
+        if (saved === 'system') {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+/* Dashboard.css */
+.parent-page {
+  background: var(--bg-primary);
+  min-height: 100vh;
+  color: var(--text-primary);
+}
+
+.parent-content {
+  max-width: var(--max-w, 1200px);
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.parent-header {
+  margin-bottom: var(--space-8);
+}
+
+.parent-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.parent-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.parent-search-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.parent-search-form {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.parent-search-input-group {
+  flex: 1;
+  min-width: 250px;
+}
+
+.parent-search-input-group label {
+  display: block;
+  margin-bottom: var(--space-2);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.parent-search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.parent-search-icon {
+  position: absolute;
+  left: 12px;
+  color: var(--text-secondary);
+}
+
+.parent-search-input {
+  width: 100%;
+  padding: 10px 14px 10px 40px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.parent-search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.parent-btn {
+  padding: 10px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.parent-btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+
+.parent-btn-primary:hover {
+  opacity: 0.9;
+}
+
+.parent-btn-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.parent-btn-outline:hover {
+  background: var(--bg-surface);
+}
+
+.parent-emergency-banner {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--danger);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin-bottom: var(--space-6);
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.parent-emergency-icon {
+  color: var(--danger);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.parent-emergency-content {
+  flex: 1;
+}
+
+.parent-emergency-title {
+  color: var(--danger);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+  margin-top: 0;
+}
+
+.parent-emergency-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-3);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.parent-emergency-message {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-3);
+}
+
+.parent-emergency-actions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.parent-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+  overflow-x: auto;
+}
+
+.parent-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.parent-card-title {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.parent-table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.parent-table th {
+  padding: var(--space-3) var(--space-2);
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.parent-table td {
+  padding: var(--space-3) var(--space-2);
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.parent-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.parent-table-muted {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  display: block;
+  margin-top: 2px;
+}
+
+.parent-select {
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+}
+
+.parent-select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .parent-content {
+    padding: var(--space-4);
+  }
+  
+  .parent-emergency-banner {
+    flex-direction: column;
+  }
+}
